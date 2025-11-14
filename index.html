@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Landing Keren — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+  <header class="nav-wrap">
+    <div class="container nav">
+      <a class="brand" href="#">MySite</a>
+      <nav>
+        <a href="#features">Fitur</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#contact">Kontak</a>
+        <button id="themeToggle" class="btn small">Mode Gelap</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Buat Website yang Cepat & Elegan</h1>
+          <p>Bisa di-deploy hanya dengan upload file HTML, CSS, dan JS. Desain responsif, animasi halus, dan mudah dikustom.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#showcase">Lihat Demo</a>
+            <a class="btn ghost" href="#contact">Hubungi</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="mockup">
+            <div class="mockup-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-body">
+              <h3>Judul Kecil</h3>
+              <p>Contoh konten singkat yang menarik perhatian pengunjung.</p>
+              <div class="tags">
+                <span>Responsive</span>
+                <span>Lightweight</span>
+                <span>Upload-ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Kenapa pilih ini?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Ringan & Cepat</h3>
+          <p>Hanya file statis. Muat cepat di HP dan desktop.</p>
+        </div>
+        <div class="card">
+          <h3>Mudah Di-deploy</h3>
+          <p>Cukup upload file ke layanan hosting statis (Netlify/Neocities/GitHub Pages).</p>
+        </div>
+        <div class="card">
+          <h3>Tampilan Modern</h3>
+          <p>UI sederhana, animasi halus, dan desain responsif.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase" class="container showcase">
+      <h2>Contoh Konten</h2>
+      <div class="show-grid">
+        <article class="show-item">
+          <h4>Projek A</h4>
+          <p>Deskripsi singkat projek, apa yang ditawarkan.</p>
+          <a class="link" href="#">Lihat</a>
+        </article>
+        <article class="show-item">
+          <h4>Projek B</h4>
+          <p>Deskripsi singkat lain yang menarik.</p>
+          <a class="link" href="#">Lihat</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Kontak</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Nama" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Tulis pesan..." required></textarea>
+        <button class="btn primary" type="submit">Kirim</button>
+      </form>
+      <p class="muted">Form ini demo saja — tidak mengirim email tanpa backend.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> MySite • Dibuat dengan ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
